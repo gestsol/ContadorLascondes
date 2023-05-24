@@ -2,7 +2,7 @@
 
 header("Refresh:60");
 
-include "./conexion.php";
+include "conexion.php";
 
 $user="dorian";
 
@@ -25,15 +25,15 @@ date_default_timezone_set('America/Santiago');
 $hoy = date("Y-m-d");
 $hoylog = date("Y-m-d  H:i:s");
 
-include "./ikcount.php";
+include "ikcount.php";
 
 
-include "./lista_tracker.php";
+include "lista_tracker.php";
 
 if ( $array2->success==false){
 
 
-    include "./hash.php";
+    include "hash.php";
 
     echo
 
@@ -151,7 +151,7 @@ foreach ($ids as $id) {
          
     }
 
-    echo "  id_tracker: $id_tracker Fecha : $fecha, Estatus: $status, Entradas: $entrada, Salidas : $salida ";
+    echo "  id_tracker: $id_tracker Fecha : $fecha, Estatus: $status, Entradas: $entrada, Salidas : $salida, Consulta: $hoylog";
  
    
 
