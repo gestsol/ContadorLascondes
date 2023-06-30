@@ -56,6 +56,7 @@ foreach ($ids as $id) {
     echo
     $patente2 = $id->label;
 
+    
     $id_tracker = $id->id;
 
 
@@ -71,7 +72,7 @@ foreach ($ids as $id) {
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => 'POST',
-        CURLOPT_POSTFIELDS => '{"hash": "68d5c08e6e4d5b6c33ce47cc488a62e7", "tracker_id":'.$id_tracker.' }',
+        CURLOPT_POSTFIELDS => '{"hash": "'.$hashed.'", "tracker_id":'.$id_tracker.' }',
         CURLOPT_HTTPHEADER => array(
             'Content-Type: application/json'
         ),
