@@ -2,7 +2,7 @@
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'http://35.174.17.76/iklab/ikcount/api/countingdataV2?appKey=JDJiJDEwJDdSSVE4ZmVIb0g0Y0M3WGpmRTBJUGVaNVNwZzNYS25QdEo2OFZvelRQNnhsWHRTVEwuZTlTOmFkbWluOklLTEFCMDA1',
+  CURLOPT_URL => 'http://54.85.73.208/iklab/ikcount/api/countingdataV2?appKey=JDJiJDEwJDdSSVE4ZmVIb0g0Y0M3WGpmRTBJUGVaNVNwZzNYS25QdEo2OFZvelRQNnhsWHRTVEwuZTlTOmFkbWluOklLTEFCMDA1',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
